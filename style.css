@@ -347,14 +347,22 @@ main{
     color: #979797;
 }
 /* card plan */
+.plans-container--slider{
+    display: flex;
+    /* gap: 50px; */
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 230px;
-    margin: 50px auto 0;
-    /* padding: 0 15px; */
+    margin: 50px 5px 0;
     background-color: var(--warm-black);
     border-radius: 15px;
 }
