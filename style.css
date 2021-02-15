@@ -330,7 +330,7 @@ main{
     min-width: 288px;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .plans--title h2{
     padding-top: 50px;
@@ -362,7 +362,7 @@ main{
     min-width: 190px;
     max-width: 300px;
     height: 230px;
-    margin: 50px 5px 0;
+    margin: 20px 5px 0;
     background-color: var(--warm-black);
     border-radius: 15px;
 }
