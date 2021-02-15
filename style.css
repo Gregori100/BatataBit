@@ -323,7 +323,7 @@ main{
     min-width: 320px;
     padding-bottom: 70px;
     text-align: center;
-    background-color: var(--off-white);
+    background-color: var(--black);
 }
 .plans--title{
     width: 90%;
@@ -337,14 +337,14 @@ main{
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--black);
+    color: var(--just-white);
 }
 .plans--title p{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #757575;
+    color: #979797;
 }
 /* card plan */
 .plans-container--card{
@@ -352,38 +352,44 @@ main{
     width: 70%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
+    height: 230px;
     margin: 50px auto 0;
-    padding: 0 15px;
-    background-color: var(--just-white);
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    /* padding: 0 15px; */
+    background-color: var(--warm-black);
     border-radius: 15px;
 }
-.recommended{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 6px;
-    left: calc(50% - 60px);
-    top: -15px;
-    font-size: 1.2rem;    
-    background-color: var(--bitcoin-orange);
-    border-radius: 8px;
-    color: var(--just-white);
+.card-monthly{    
+    box-shadow: 2px 2px 10px #1e9af4;
+}
+.card-biannual{    
+    box-shadow: 2px 2px 10px #3ee97f;
+}
+.card-annual{    
+    box-shadow: 2px 2px 10px #fa8f1c;
 }
 .plan-card--title{
-    padding-top: 30px;
-    font-size: 1.4rem;
+    padding:10px 0;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: black;
+    color: var(--just-white);
+    background-color: black;
+    border-radius: 15px 15px 0 0;
 }
 .plan-card--price{
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 5rem;
-    color: black;
+}
+.price-monthly{
+    color: #1e9af4;
+}
+.price-biannual{
+    color: #3ee97f;
+}
+.price-annual{
+    color: #fa8f1c;
 }
 .plan-card--price span{
     font-size: 1.2rem;
@@ -391,26 +397,39 @@ main{
     vertical-align: 25px;
 }
 .plan-card--saving{
+    padding: 0 15px;
     font-size: 1.2rem;
-    color:#757575;
+    color:#979797;
 }
 .plan-card--ca{
     width: 150px;
-    height: 48px;
-    margin-top: 20px;
-    background-color: #FAF8F7;
-    border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
+    height: 35px;
+    margin-top: 20px;        
+    border-radius: 100px;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
-    color: var(--black);
+    color: var(--just-white);
     font-family: 'DM Sans', sans-serif;
+}
+.ca-monthly{
+    background-color:#1e9af4;
+    border: 2px solid #1e9af4;
+}
+.ca-biannual{
+    background-color:#3ee97f;
+    border: 2px solid #3ee97f;
+}
+.ca-annual{
+    background-color:#fa8f1c;
+    border: 2px solid var(--bitcoin-orange);
 }
 .plan-card--ca span{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('./assets/icons/orange-right-arrow.svg');
-    vertical-align: text-bottom;
+    background-image: url('https://img.icons8.com/fluent-systems-regular/24/ffffff/circled-right.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: -6px;
 }
